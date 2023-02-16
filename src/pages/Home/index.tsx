@@ -19,11 +19,18 @@ export const Home = () => {
   const filterSelecteds = (item: boolean) =>
     item ? item : selectedItems.length === 0 ? data : null;
 
-  const filterSearch = (item: { category: { name: string; }; name: string; }) =>
-    item.category.name.toLowerCase().includes(search) ||
-      item.name.toLowerCase().includes(search)
+  const filterSearch = (item: { category: { name: any; }; name: any; }) => {
+    const normalize = (text: string) =>
+      text
+        .normalize('NFD')
+        .toLowerCase()
+        .replace(/([\u0300-\u036f]|[^0-9a-zA-Z])/g, '');
+
+    return normalize(item.category.name).includes(search) ||
+      normalize(item.name).includes(search)
       ? item
       : null;
+  };
 
   const handleSelecteds = (e: ChangeEvent<HTMLInputElement>, itemName: string) => {
     if (e.target.checked) {

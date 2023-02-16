@@ -16,12 +16,10 @@ export const styleInput = createStyles({
       borderColor: '#FFF',
     },
     '&:hover fieldset': {
-      border: '2px solid',
-      borderColor: '#FFF',
+      border: 'none',
     },
     '&.Mui-focused fieldset': {
-      border: '2px solid',
-      borderColor: '#FFF',
+      border: 'none',
     },
   },
 });
