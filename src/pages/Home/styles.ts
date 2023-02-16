@@ -32,6 +32,12 @@ export const ContainerContent = styled.div`
   @media (max-width: 620px) {
     align-items: center;
   }
+
+  @media (max-width: 590px) {
+    gap: 20px;
+    width: 86%;
+    justify-content: flex-start;
+  }
 `;
 
 export const Title = styled.h2`
@@ -45,12 +51,7 @@ export const TitleResult = styled.div`
   width: 100%;
 
   @media (max-width: 660px) {
-    padding-left: 25px;
-  }
-
-  @media (max-width: 540px) {
-    text-align: center;
-    padding: 0;
+    padding-left: 20px;
   }
 `;
 

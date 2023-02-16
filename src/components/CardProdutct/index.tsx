@@ -9,7 +9,7 @@ interface PropsCardProduct {
 export const CardProduct = ({ image, alt, name }: PropsCardProduct) => {
   return (
     <S.ContainerCard>
-      <img src={image} alt={alt} width={250} height={250} />
+      <S.Image src={image} alt={alt} />
       <S.NameProduct>
         {name}
       </S.NameProduct>

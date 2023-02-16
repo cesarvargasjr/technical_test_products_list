@@ -1,4 +1,4 @@
-import { ChangeEvent, useEffect, useState, useCallback } from 'react';
+import { ChangeEvent, useEffect, useState } from 'react';
 import { getProducts, PropsProducts } from '../../services/products';
 import { CardProduct } from '../../components/CardProdutct';
 import { Header } from '../../components/Header';
@@ -56,19 +56,6 @@ export const Home = () => {
         filterSelecteds(selectedItems.includes(item.category.name))
       );
 
-  // const buildItems: any = useCallback(async (data: any[] | undefined) => {
-  //   data
-  //     ?.filter(filterSearch)
-  //     .filter((item) =>
-  //       filterSelecteds(selectedItems.includes(item.category.name))
-  //     );
-
-  //   const result: any = buildItems(data);
-  //   setDataItems(result);
-
-  // }, [search, selectedItems, data])
-
-
   const RenderIconExpand = () => {
     if (!expandFilter) {
       return (
@@ -89,7 +76,6 @@ export const Home = () => {
     }
   };
 
-
   useEffect(() => {
     handleData()
   }, []);
@@ -98,8 +84,6 @@ export const Home = () => {
     const result: any = buildItems(data);
     setDataItems(result);
   }, [search, selectedItems, data]);
-
-  // console.log('*****', window)
 
   return (
     <>

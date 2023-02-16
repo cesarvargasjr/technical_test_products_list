@@ -15,10 +15,30 @@ export const ContainerCard = styled.div`
   @media (max-width: 640px) {
     width: 220px;
   }
+
+  @media (max-width: 590px) {
+    height: 180px;
+    width: 130px;
+    padding: 15px;
+  }
 `;
 
 export const NameProduct = styled.p`
   font-size: 16px;
   text-align: center;
   align-self: center;
+
+  @media (max-width: 590px) {
+    font-size: 14px;
+  }
+`;
+
+export const Image = styled.img`
+  height: 250px;
+  width: 250px;
+
+  @media (max-width: 590px) {
+    height: 100px;
+    width: 100px;
+  }
 `;
