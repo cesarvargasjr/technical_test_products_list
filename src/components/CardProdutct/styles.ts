@@ -21,6 +21,15 @@ export const ContainerCard = styled.div`
     width: 130px;
     padding: 15px;
   }
+
+  @media (max-width: 380px) {
+    width: 110px;
+  }
+
+  @media (max-width: 320px) {
+    width: 90px;
+    padding: 15px;
+  }
 `;
 
 export const NameProduct = styled.p`
@@ -40,5 +49,10 @@ export const Image = styled.img`
   @media (max-width: 590px) {
     height: 100px;
     width: 100px;
+  }
+
+  @media (max-width: 380px) {
+    height: 60px;
+    width: 60px;
   }
 `;
