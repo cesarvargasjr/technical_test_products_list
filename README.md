@@ -43,4 +43,13 @@ Executados os comandos abra [http://localhost:3000](http://localhost:3000) para 
 
 ##
 
-### Printscreen do projeto:
+### Printscreen da página "Home" do projeto:
+
+## Versão Desktop:
+
+<img width="1423" alt="image" src="https://user-images.githubusercontent.com/72532360/219510333-0e3d8ea8-bfa8-4615-844c-d4f82e9b0ed8.png">
+
+## Versão Mobile:
+
+<img width="321" alt="image" src="https://user-images.githubusercontent.com/72532360/219510586-d8eaa0ef-251b-4e7c-a18f-cbcfb69993b8.png">
+
