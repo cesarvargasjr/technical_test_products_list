@@ -9,10 +9,12 @@ export const ContainerCard = styled.div`
   padding: 20px;
   height: 320px;
   width: 230px;
-  margin-right: 35px;
-  margin-bottom: 35px;
   box-shadow: 0 0 3px 3px #0001;
   cursor: pointer;
+
+  @media (max-width: 640px) {
+    width: 220px;
+  }
 `;
 
 export const NameProduct = styled.p`

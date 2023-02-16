@@ -11,9 +11,11 @@ export const Header = ({ onChange }: PropsHeader) => {
       <S.TitleHeader>
         O que você está procurando?
       </S.TitleHeader>
-      <InputSearch
-        onChange={onChange}
-      />
+      <S.ContainerInput>
+        <InputSearch
+          onChange={onChange}
+        />
+      </S.ContainerInput>
     </S.ContainerHeader>
   )
 };

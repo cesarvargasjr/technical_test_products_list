@@ -1,9 +1,11 @@
 import { createStyles } from "@mui/material";
 
 export const styleInput = createStyles({
+  width: '100%',
+
   '& .MuiInputBase-root': {
+    display: 'flex',
     height: 40,
-    width: 550,
     borderRadius: 50,
     backgroundColor: '#FFF',
   },
