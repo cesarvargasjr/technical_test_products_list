@@ -43,7 +43,7 @@ Executados os comandos abra [http://localhost:3000](http://localhost:3000) para 
 
 ##
 
-## Printscreen da página "Home" do projeto:
+### Printscreen da página "Home" do projeto:
 
 ### Versão Desktop:
 
